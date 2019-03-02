@@ -81,6 +81,6 @@ app.post('/answer/:id',(req,res)=> {
 
 
 //Server start
-app.listen(8081, ()=> {
+app.listen(process.env.PORT || 8081, ()=> {
     console.log('listening on Port 8081');
 });
